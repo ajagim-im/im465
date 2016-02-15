@@ -30,12 +30,13 @@ ul li {
 
 .portfolio_work_title
 {
+	display: none;
 	text-align: center;
 }
 
 .portfolio_work_description
 {
-
+	display: none;
 }
 
 /*ID Styles*/
@@ -45,3 +46,5 @@ ul li {
 	width: 90%;
 	margin: 0 auto;
 }
+
+/*Mobile Changes*/
