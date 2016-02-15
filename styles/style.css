@@ -1,0 +1,41 @@
+/*Element Styles*/
+
+ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+ul li {
+	display: inline-block;
+	width: 12%;
+	text-align: center;
+	margin: 0 3%;
+}
+
+
+/*Class Styles*/
+
+.portfolio_work
+{
+	width: 30%;
+	margin: 0;
+	display: inline-block;
+}
+
+.portfolio_work_title
+{
+	text-align: center;
+}
+
+.portfolio_work_description
+{
+
+}
+
+/*ID Styles*/
+
+#portfolio-container
+{
+	width: 90%;
+	margin: 0 auto;
+}
