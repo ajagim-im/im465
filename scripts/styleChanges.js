@@ -36,4 +36,17 @@ function resizePortfolioBoxes(className)
 	{
 		findClass[i].style.height = tallest + "px";
 	}
+	hideAllText();
+}
+
+function hideAllText()
+{
+	var findTitles = document.getElementsByClassName("portfolio_work_title");
+	var findDescriptions = document.getElementsByClassName("portfolio_work_description");
+
+	for(var i = 0; i < findTitles.length; i++)
+	{
+		findTitles[i].style.display = 'none';
+		findDescriptions.style.display = 'none';
+	}
 }
