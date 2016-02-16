@@ -19,8 +19,8 @@ ul li {
 .portfolio_work
 {
 	width: 30%;
-	margin: 0;
-	display: inline-block;
+	margin: 1% 1.5%;
+	float: left;
 }
 
 .portfolio_work img
@@ -31,13 +31,13 @@ ul li {
 
 .portfolio_work_title
 {
-	display: none;
+	/*display: none;*/
 	text-align: center;
 }
 
 .portfolio_work_description
 {
-	display: none;
+	/*display: none;*/
 }
 
 /*ID Styles*/

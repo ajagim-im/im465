@@ -17,3 +17,23 @@ function hideText(e)
 	//The Description
 	e.children[2].style.display = 'none';
 }
+
+function resizePortfolioBoxes(className)
+{
+	var findClass = document.getElementsByClassName(className);
+	var tallest = 0;
+	console.log(findClass.length);
+	for(var i = 0; i < findClass.length; i++)
+	{
+		console.log("Tallest: " + tallest);
+		console.log("Offset Height: " + findClass[i].offsetHeight);
+		if(findClass[i].offsetHeight > tallest)
+		{
+			tallest = findClass[i].offsetHeight;
+		}
+	}
+	for(var i = 0; i < findClass.length; i++)
+	{
+		findClass[i].style.height = tallest + "px";
+	}
+}
