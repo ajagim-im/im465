@@ -22,11 +22,8 @@ function resizePortfolioBoxes(className)
 {
 	var findClass = document.getElementsByClassName(className);
 	var tallest = 0;
-	console.log(findClass.length);
 	for(var i = 0; i < findClass.length; i++)
 	{
-		console.log("Tallest: " + tallest);
-		console.log("Offset Height: " + findClass[i].offsetHeight);
 		if(findClass[i].offsetHeight > tallest)
 		{
 			tallest = findClass[i].offsetHeight;
@@ -47,6 +44,18 @@ function hideAllText()
 	for(var i = 0; i < findTitles.length; i++)
 	{
 		findTitles[i].style.display = 'none';
-		findDescriptions.style.display = 'none';
+		findDescriptions[i].style.display = 'none';
+	}
+}
+
+function showAllText()
+{
+	var findTitles = document.getElementsByClassName("portfolio_work_title");
+	var findDescriptions = document.getElementsByClassName("portfolio_work_description");
+
+	for(var i = 0; i < findTitles.length; i++)
+	{
+		findTitles[i].style.display = 'block';
+		findDescriptions[i].style.display = 'block';
 	}
 }
