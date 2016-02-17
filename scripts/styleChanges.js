@@ -18,15 +18,18 @@ function hideText(e)
 	e.children[2].style.display = 'none';
 }
 
-function resizePortfolioBoxes(className)
+function resizePortfolioBoxes(className,ratio_x,ratio_y)
 {
+
 	var findClass = document.getElementsByClassName(className);
 	var tallest = 0;
+	var temp_height = 0;
 	for(var i = 0; i < findClass.length; i++)
 	{
-		if(findClass[i].offsetHeight > tallest)
+		temp_height = (findClass[i].offsetWidth)/(ratio_x/ratio_y)
+		if(temp_height > tallest)
 		{
-			tallest = findClass[i].offsetHeight;
+			tallest = temp_height;
 		}
 	}
 	for(var i = 0; i < findClass.length; i++)
