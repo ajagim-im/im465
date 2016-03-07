@@ -22,23 +22,32 @@ function hideText(e)
 
 function resizePortfolioBoxes(className,ratio_x,ratio_y)
 {
-
-	var findClass = document.getElementsByClassName(className);
-	var tallest = 0;
-	var temp_height = 0;
-	for(var i = 0; i < findClass.length; i++)
-	{
-		temp_height = (findClass[i].offsetWidth)/(ratio_x/ratio_y)
-		if(temp_height > tallest)
+	if(window.innerWidth > 700)
 		{
-			tallest = temp_height;
+		var findClass = document.getElementsByClassName(className);
+		var tallest = 0;
+		var temp_height = 0;
+		for(var i = 0; i < findClass.length; i++)
+		{
+			temp_height = (findClass[i].offsetWidth)/(ratio_x/ratio_y)
+			if(temp_height > tallest)
+			{
+				tallest = temp_height;
+			}
+		}
+		for(var i = 0; i < findClass.length; i++)
+		{
+			findClass[i].style.height = tallest + "px";
 		}
 	}
-	for(var i = 0; i < findClass.length; i++)
+	else
 	{
-		findClass[i].style.height = tallest + "px";
+		var findClass = document.getElementsByClassName(className)
+		for(var i = 0; i < findClass.length; i++)
+		{
+			findClass[i].style.height = "100%";
+		}
 	}
-	//hideAllText();
 }
 
 function hideAllText()
