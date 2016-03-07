@@ -13,6 +13,15 @@ ul li {
 	margin: 0 3%;
 }
 
+ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+ul li a:hover {
+	color: blue;
+}
+
 
 /*Class Styles*/
 
@@ -37,11 +46,12 @@ ul li {
 {
 	/*display: none;*/
 	text-align: center;
+	margin-top: 12%;
 }
 
 .portfolio_work_description
 {
-	/*display: none;*/
+	padding: 15px;
 }
 
 /*ID Styles*/

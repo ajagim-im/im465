@@ -1,7 +1,8 @@
 function showText(e)
 {
 	//The Image
-	e.children[0].style.display = 'none';
+	//e.children[0].style.display = 'none';
+	e.children[0].style.opacity = '0.3';
 	//The Title
 	e.children[1].style.display = 'block';
 	//The Description
@@ -11,7 +12,8 @@ function showText(e)
 function hideText(e)
 {
 	//The Image
-	e.children[0].style.display = 'block';
+	//e.children[0].style.display = 'block';
+	e.children[0].style.opacity = '1';
 	//The Title
 	e.children[1].style.display = 'none';
 	//The Description
