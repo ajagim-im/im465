@@ -38,7 +38,7 @@ function resizePortfolioBoxes(className,ratio_x,ratio_y)
 	{
 		findClass[i].style.height = tallest + "px";
 	}
-	hideAllText();
+	//hideAllText();
 }
 
 function hideAllText()
