@@ -69,7 +69,7 @@ ul li a:hover {
 
 #project_page_content_container
 {
-	width: 90%;
+	width: 70%;
 	margin: 0 auto;
 }
 
@@ -150,6 +150,10 @@ ul li a:hover {
 	.portfolio_work_description
 	{
 		display: block;
+	}
+	#project_page_content_container
+	{
+		width: 90%;
 	}
 }
 
